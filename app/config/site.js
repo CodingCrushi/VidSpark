@@ -1,7 +1,6 @@
 const SiteConfig = {
-  name: "اسم سایت",
-  name_en: "name web",
-  description: "دکسکرپشن سایت",
+  name: "لینکو",
+  description: "فقط با قرار داد لینک درامدتو چند برابر کن",
   lang: "fa",
   dir: "rtl",
 };
