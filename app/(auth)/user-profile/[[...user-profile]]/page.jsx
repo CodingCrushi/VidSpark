@@ -1,7 +1,9 @@
 import { UserProfile } from "@clerk/nextjs";
 
-const UserProfilePage = () => (
-  <UserProfile path="/user-profile" />
-);
+const UserProfilePage = () => {
+  return (
+    <div className="flex justify-center"> <UserProfile path="/user-profile" /></div>
+  )
+}
 
-export default UserProfilePage;
+export default UserProfilePage

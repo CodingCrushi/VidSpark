@@ -43,14 +43,18 @@ const Navbar = () => {
                                     </li>
                                 )
                             })}
-                            {!user && (<>
+                            {!user ? (<>
                                 <li className="mb-2">
                                     <Link href="/sign-in" className='hover:bg-amber-600'>ورود</Link>
                                 </li>
                                 <li className="mb-2">
                                     <Link href="/sign-up" className='hover:bg-amber-600'>ثبت نام</Link>
                                 </li>
-                            </>)
+                            </>) : (
+                                <> <li className="mb-2">
+                                    <Link href="/user-profile" className='hover:bg-amber-600'>پروفایل</Link>
+                                </li></>
+                            )
                             }
                         </ul>
                     </div>
