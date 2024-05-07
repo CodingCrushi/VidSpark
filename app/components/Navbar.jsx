@@ -4,10 +4,18 @@ import React from 'react'
 import { FaLink } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import SiteConfig from "@/app/config/site"
+import { SignIn, useUser } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+    const router = useRouter();
     const pathname = usePathname();
     const nav = SiteConfig.nav;
+    const { user } = useUser();
+
+    // if (!user) {
+    //     router.push("/sign-in");
+    // }
     return (
         <div>
             <div className="navbar ">
@@ -17,7 +25,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="navbar-center">
-                    <Link className="btn btn-ghost text-xl" href="/">لینکو</Link>
+                    <Link className="btn btn-ghost font-bold text-xl hover:bg-black hover:text-amber-600" href="/">لینکو</Link>
                 </div>
                 <div className="navbar-end">
                     <div className="dropdown">
@@ -35,6 +43,15 @@ const Navbar = () => {
                                     </li>
                                 )
                             })}
+                            {!user && (<>
+                                <li className="mb-2">
+                                    <Link href="/sign-in" className='hover:bg-amber-600'>ورود</Link>
+                                </li>
+                                <li className="mb-2">
+                                    <Link href="/sign-up" className='hover:bg-amber-600'>ثبت نام</Link>
+                                </li>
+                            </>)
+                            }
                         </ul>
                     </div>
                 </div>

@@ -1,15 +1,7 @@
 import { UserProfile } from "@clerk/nextjs";
-import { SignIn, useUser } from "@clerk/nextjs";
 
-const UserProfilePage = () => {
-  const { user } = useUser();
+const UserProfilePage = () => (
+  <UserProfile path="/user-profile" />
+);
 
-  if (!user) {
-    return <SignIn />;
-  }
-  return (
-    <div> <UserProfile path="/user-profile" /></div>
-  )
-}
-
-export default UserProfilePage
+export default UserProfilePage;

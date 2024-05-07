@@ -5,8 +5,8 @@ const SiteConfig = {
   dir: "rtl",
   nav: [
     { id: 1, name: "خانه", link: "/" },
-    { id: 2, name: "ثبت نام", link: "/sign-up" },
-    { id: 3, name: "ورود", link: "/sign-in" },
+    // { id: 2, name: "ثبت نام", link: "/sign-up" },
+    // { id: 3, name: "ورود", link: "/sign-in" },
   ],
 };
 
