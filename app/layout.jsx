@@ -5,6 +5,7 @@ import SiteConfig from "@/app/config/site"
 const inter = Inter({ subsets: ["latin"] });
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: SiteConfig.name,
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <h1 className="hidden">{SiteConfig.name}</h1>
         <Analytics />
         <div className="bg-black text-white">
+          <Navbar />
           {children}
           <Footer />
         </div>
