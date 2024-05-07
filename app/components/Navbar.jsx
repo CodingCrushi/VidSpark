@@ -20,7 +20,7 @@ const Navbar = () => {
         <div>
             <div className="navbar ">
                 <div className="navbar-start">
-                    <button className="btn btn-ghost btn-circle">
+                    <button className="btn btn-ghost btn-circle hover:bg-amber-600">
                         <FaLink size={25} color='FDE047' />
                     </button>
                 </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                         </div>
                         <ul tabIndex={0}
-                            className="menu menu-sm  lg:menu-lg dropdown-content mt-3 z-[1] p-2 left-0 shadow  border-4 border-amber-600 rounded-box w-52"
+                            className="menu bg-black menu-sm  lg:menu-lg dropdown-content mt-3 z-[1] p-2 left-0 shadow  border-4 border-amber-600 rounded-box w-52"
                         >
                             {nav?.map((item) => {
                                 return (

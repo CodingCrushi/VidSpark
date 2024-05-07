@@ -10,7 +10,9 @@ const Footer = () => {
         <footer className="footer p-4 text-neutral-content">
             <div className='flex flex-wrap items-center justify-center sm:justify-between  px-5 w-[98%] md:w-[92%] mx-auto py-4'>
                 <aside className="flex gap-4 items-center grid-flow-col">
+                    <button className='btn btn-ghost btn-circle hover:bg-amber-600'>
                     <FaLink color='FDE047' size={36} className="fill-current"/>
+                    </button>
                     <p>کپی رایت © {new Date().getFullYear()} - <Link href="/" className='hover:text-[#FDE047] font-bold'>{SiteConfig.name}</Link></p>
                 </aside>
                 <nav className="flex grid-flow-col gap-4 md:place-self-center md:justify-self-end">
