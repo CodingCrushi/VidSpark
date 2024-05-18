@@ -20,7 +20,7 @@ const Hero = () => {
                             </a>
                         </div>
                         <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center order-1 md:order-2">
-                            <div className="h-48 flex flex-wrap content-center">
+                            <div className="h-48 flex flex-wrap content-center justify-center">
                                 <div>
                                     <img className=" mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png" /></div>
                                 <div>
